@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.Container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Container .Login {
+  background-color: rgba(115, 115, 115, 0.3);
+  width: 40%;
+  min-width: 300px;
+  max-height: 700px;
+  height: 100vh;
+  z-index: 100;
+  margin-right: -100px;
+}
+
+.Container .Login .Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Container .Login .Form input {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'DotGothic16', sans-serif;
+  padding: 5px;
+  width: 80%;
+  background-color: rgba(115, 115, 115, 0.2);
+  border: solid white 5px;
+  margin: 10px;
+}
+
+.Container .Login .Form p {
+  color: red;
+}
+
+.Container .Login .Form Button {
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+.Container .Image {
+  width: 60%;
+  height: 100vh;
+  z-index: -100;
+}
+
+.Container .Image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .Image {
+    visibility: hidden;
+    display: none;
+  }
+  .Login {
+    margin-left: -100px;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

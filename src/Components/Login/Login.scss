@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+
+@mixin Conatiner_display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+::placeholder { 
+    color: #fff;
+    opacity: 1; 
+  }
+
+.Container{
+    width: 100%;
+    height: 100vh;
+    @include Conatiner_display();
+
+    //##################Login--container#########################
+    .Login{
+        background-color: rgba(115, 115, 115,0.3);
+        width: 40%;
+        min-width: 300px;
+        max-height: 700px;
+        height: 100vh;
+        z-index: 100;
+        margin-right: -100px;
+        .Form{
+            @include Conatiner_display();
+            flex-direction: column;
+            input{
+              text-align: center;
+              color: #fff;
+              font-size: 30px;
+              font-family: 'DotGothic16', sans-serif;
+              padding: 5px;
+              width:80%;
+              background-color: rgba(115, 115, 115,0.2);
+              border: solid white 5px;
+              margin: 10px;
+              
+            }
+            p{
+                color: red;
+            }
+
+            Button{
+                width: 50%;
+                padding: 5px;
+                text-align: center;
+                color: #000;
+                font-size: 30px;
+                margin-top: 70px;
+            }
+
+        }
+    }
+
+    //##################Image--container#########################
+
+    .Image{
+        width: 60%;
+        height: 100vh;
+        z-index: -100;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+@media(max-width:500px){
+    .Image{
+        visibility: hidden;
+        display: none;
+    }
+    .Login{
+        margin-left: -100px;
+        
+    }
+}

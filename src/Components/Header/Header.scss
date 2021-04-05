@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+.Header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333301;
+    .Left_container{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    .Right_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+.navElement{
+    color: white;
+    font-size: 20px;
+    font-family: 'Dela Gothic One', cursive;
+    margin: 5px;
+}
+.User{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
